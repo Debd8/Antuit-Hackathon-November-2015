@@ -1,6 +1,6 @@
 # Reading the training data into R
 
-mff_train <- read.csv("/home/Desktop/train.csv",header = T, stringsAsFactors = F)
+mff_train <- read.csv(".../train.csv",header = T, stringsAsFactors = F)
 
 # Creating a month variable by extracting month from date
 
@@ -71,7 +71,7 @@ error.final <- sqrt((sum((testing$Sales-final.predict)^2))/(nrow(testing)-1))
                                                                         
 # Reading the test data into R
 
-mff_test <- read.csv("/home/Desktop/test.csv",header = T, stringsAsFactors = F)
+mff_test <- read.csv(".../test.csv",header = T, stringsAsFactors = F)
 
 # Performing data transformations on mff_test to arrive at the final test dataset
 
